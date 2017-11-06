@@ -11,9 +11,27 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2">sidebar</div>
+            <div class="col-2">
+                <nav id="sidebar">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label>Input Id:
+                                    <input id="bankIDinput" type="number" class="form-control" placeholder="SNL ID">
+                                </label>
+                                <label>Target Yield:
+                                    <input id="yieldInput" type="number" class="form-control" placeholder="Target Yield">
+                                </label>
+                                <label>Target Cash %:
+                                    <input id="cashInput" type="number" class="form-control" placeholder="Cash %">
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </nav>
+            </div>
             <div class="col-8">
-                <table class="table no-border">
+                <table class="table no-border table-hover">
                     <tr>
                         <td class="tableHeader text-left" id="unitNote">Note: $ in 000s</td>
                         <td class="tableHeader text-center" id="ltmHeader">LTM</td>
@@ -22,12 +40,19 @@
                         <td class="tableHeader text-center" id="percentAssetsRestructuredHeader">% Assets</td>
                     </tr>
                     <tr>
-                        <td class="fieldName text-left" "></td>
+                        <td class="fieldName text-left midLine singleUnderLine">Balance Sheet</td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>                    
+                    </tr>
+                    <tr>
+                        <td class="fieldNames text-left singleUnderline"></td>
+                        <td class="LTM yellowRowCells "></td>
+                        <td class="percentLTM "></td>
+                        <td class="restructured yellowRowCells "></td>
+                        <td class="percentRestructured "></td>
+                    </tr>
                     <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM yellowRowCells "></td>
@@ -35,197 +60,214 @@
                         <td class="restructured yellowRowCells "></td>
                         <td class="percentRestructured "></td>
                     </tr>
-                                        <tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM yellowRowCells "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured yellowRowCells "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  
-                                                            <tr>
-                        <td class="fieldNames text-left "></td>
-                        <td class="LTM yellowRowCells "></td>
-                        <td class="percentLTM "></td>
-                        <td class="restructured yellowRowCells "></td>
-                        <td class="percentRestructured "></td>
-                    </tr>                                           <tr>
-                        <td class="fieldNames text-left "></td>
-                        <td class="LTM yellowRowCells "></td>
-                        <td class="percentLTM "></td>
-                        <td class="restructured yellowRowCells "></td>
-                        <td class="percentRestructured "></td>
-                    </tr>                                           <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames text-left "></td>
+                        <td class="LTM ">111</td>
+                        <td class="percentLTM "></td>
+                        <td class="restructured ">111</td>
+                        <td class="percentRestructured "></td>
+                    </tr>
+                    <tr>
+                        <td class="midLine singleUnderLine">Income Statement</td>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames text-left "></td>
+                        <td class="LTM colorCells"></td>
+                        <td class="percentLTM yield" rowspan="2"></td>
+                        <td class="restructured colorCells"></td>
+                        <td class="percentRestructured yield" rowspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldNames text-left "></td>
+                        <td class="LTM colorCells"></td>
+                        <td class="restructured colorCells"></td>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
                         <td class="restructured "></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
-                        <td class="restructured "></td>
+                        <td class="restructured yellowRowCells"></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
+                    </tr>
+                    <tr>
                         <td class="fieldNames text-left "></td>
                         <td class="LTM "></td>
                         <td class="percentLTM "></td>
-                        <td class="restructured "></td>
+                        <td class="restructured yellowRowCells"></td>
                         <td class="percentRestructured "></td>
-                    </tr>  <tr>
-                        <td class="fieldNames text-left "></td>
-                        <td class="LTM "></td>
-                        <td class="percentLTM "></td>
-                        <td class="restructured "></td>
-                        <td class="percentRestructured "></td>
-                    </tr>  <tr>
-                        <td class="fieldNames text-left "></td>
-                        <td class="LTM "></td>
-                        <td class="percentLTM "></td>
-                        <td class="restructured "></td>
-                        <td class="percentRestructured "></td>
-                    </tr>  <tr>
-                        <td class="fieldNames text-left "></td>
-                        <td class="LTM "></td>
-                        <td class="percentLTM "></td>
-                        <td class="restructured "></td>
-                        <td class="percentRestructured "></td>
-                    </tr>     
+                    </tr>
                 </table>
             </div>
         </div>
+    </div>
     </div>
     <script type="text/javascript " src="./js/reposition.js "></script>
 </body>

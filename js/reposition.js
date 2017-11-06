@@ -11,8 +11,8 @@ let respositionRowNames = ['Cash & Non-IB Balances',
     'Other Liabilities',
     'Total Liabilities',
     'Total Equity',
-    'Total Liabilities & Equity',
-    'Int Inc: FFS, IB Balances, Other',
+    'Total Liabs & Equity',
+    'Int Inc: FFS, IB Bal, Other',
     'Investment Income',
     'Tax. Equiv. Adjustment',
     'Int. Inc: Loans',
@@ -28,13 +28,14 @@ let respositionRowNames = ['Cash & Non-IB Balances',
     'Provision for Taxes',
     'Net Income',
     'Additional Revenue',
-    'Additional Income',
-    'yld'
+    'Additional Income'
+    //'yld'
 ]
 
 boldFieldNames = [
     'Total Assets',
-    'Net Income'
+    'Total Liabs & Equity',
+    'Net Income',
 ]
 
 singleUnderLine = [
@@ -50,7 +51,7 @@ singleUnderLine = [
 
 doubleUnderLine = [
     'Total Assets',
-    'Total Liabilities & Equity',
+    'Total Liabs & Equity',
     'Net Income',
 ]
 
@@ -67,6 +68,8 @@ $(document).ready(function() {
         if (boldFieldNames.indexOf(respositionRowNames[index]) != -1) {
 
             $(this).addClass('boldText') //ensure that they show up bold
+            $(".LTM").slice(index, index+3).addClass('boldOnly')
+            $(".restructured").slice(index, index+3).addClass('boldOnly')
 
         }
 
@@ -77,5 +80,26 @@ $(document).ready(function() {
     $(".percentRestructured").slice(1, 5).addClass("colorCells")
 
     //single underline cells
+    singleUnderLine.forEach(function(val) {
+
+        let cur = respositionRowNames.indexOf(val) //index that we will then underline in various columns
+
+        //console.log($(".LTM").slice(cur))
+        $(".fieldNames").slice(cur + 1, cur + 2).addClass("singleUnderline")
+
+    });
+
+    //double underline cells
+    doubleUnderLine.forEach(function(val) {
+
+        let cur = respositionRowNames.indexOf(val) //index that we will then underline in various columns
+
+        //console.log($(".LTM").slice(cur))
+        $(".fieldNames").slice(cur, cur+1).addClass("dblUnderlined")
+
+    });
+
+    //	watch item...........need to also drop in yield #
+    $('.yield').text('Yield:')
 
 })

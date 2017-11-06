@@ -1,15 +1,28 @@
 table {
     border-collapse: separate;
-    border-spacing: 10px 0px;
-    border-width: 0;
+    border-spacing: 10px 1px;
+   
 }
 
-​​​​​​​​​​​​​ td {
-    vertical-align: middle;
+#sidebar {
+	background-color: #e7e7e7;
+	border-radius: 10px;
+}
+
+.LTM, .restructured {
+	text-align: left;
 }
 
 .percentLTM.colorCells {
     background-color: #e2efda;
+}
+
+.LTM.colorCells{
+   background-color: #e2efda;
+}
+
+.restructured.colorCells {
+	    background-color: #ddebf7;
 }
 
 .percentRestructured.colorCells {
@@ -21,9 +34,17 @@ table {
     color: white;
 }
 
+.fieldNames {
+	    text-indent: 15px;
+}
+
+td.singleUnderline {
+  border-bottom: 3px !important;
+  border-color: black !important;
+}
 	
 .table.no-border tr td, .table.no-border tr th {
-  border-width: 0;
+  border-color: white;
 }
 
 .yellowRowCells {
@@ -32,6 +53,7 @@ table {
 
 .boldText {
     font-weight: bold;
+    text-indent: 40px;
 }
 
 .tableHeader {
@@ -42,12 +64,32 @@ table {
 #unitNote {
     font-style: italic;
     font-size: 14px;
+    background-color: white;
+    color: black;
 }
 
-.dblUnderlined { 
-	border-bottom: 3px double; 
+#percentAssetsHeaderLTM, #percentAssetsRestructuredHeader {
+    font-style: italic;
+    font-size: 18px;
+    background-color: white;
+    color: black;
 }
 
-.singleUnderline {
-	border-bottom: 3px;
+td.dblUnderlined { 
+	border-bottom: 3px double !important;
+	border-color: black !important; 
+}
+
+.midLine {
+	font-weight: bold;
+}
+
+.yield {
+	background-color: #f8cbad;
+	text-align: center;
+	font-weight: bold;
+}
+
+.boldOnly {
+	font-weight: bold;
 }
