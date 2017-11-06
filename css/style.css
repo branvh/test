@@ -1,0 +1,53 @@
+table {
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+    border-width: 0;
+}
+
+​​​​​​​​​​​​​ td {
+    vertical-align: middle;
+}
+
+.percentLTM.colorCells {
+    background-color: #e2efda;
+}
+
+.percentRestructured.colorCells {
+    background-color: #ddebf7;
+}
+
+.tableHeader {
+    background-color: #00539b;
+    color: white;
+}
+
+	
+.table.no-border tr td, .table.no-border tr th {
+  border-width: 0;
+}
+
+.yellowRowCells {
+    background-color: #ffffcc;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.tableHeader {
+    width: 20%;
+    margin-right: 10px;
+}
+
+#unitNote {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.dblUnderlined { 
+	border-bottom: 3px double; 
+}
+
+.singleUnderline {
+	border-bottom: 3px;
+}

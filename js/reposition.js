@@ -33,31 +33,49 @@ let respositionRowNames = ['Cash & Non-IB Balances',
 ]
 
 boldFieldNames = [
-'Total Assets',
-'Net Income'
+    'Total Assets',
+    'Net Income'
+]
+
+singleUnderLine = [
+    'Other Assets',
+    'Other Liabilities',
+    'Int. Inc: Loans',
+    'Total Interest Expense',
+    'Non-Interest Expense',
+    'Realized Gains',
+    'Provision for Taxes'
+
+]
+
+doubleUnderLine = [
+    'Total Assets',
+    'Total Liabilities & Equity',
+    'Net Income',
 ]
 
 $(document).ready(function() {
 
-    console.log('success')
-
+    //add field names to left hand column of tables
     let fieldArr = $(".fieldNames")
 
     $.each(fieldArr, function(index, value) {
 
-        //fieldArr[index].text(respositionRowNames[index])
         fieldArr[index].append(respositionRowNames[index])
-
-        //console.log(boldFieldNames.indexOf(respositionRowNames[index]))
 
         //apply condition formatting
         if (boldFieldNames.indexOf(respositionRowNames[index]) != -1) {
 
-        	console.log(fieldArr[index] + ' will be bold')
-        	//fieldArr[index].css('color: red; font-weight: bold')
+            $(this).addClass('boldText') //ensure that they show up bold
 
         }
 
     });
+
+    //color miscellaneous cells
+    $(".percentLTM").slice(1, 5).addClass("colorCells")
+    $(".percentRestructured").slice(1, 5).addClass("colorCells")
+
+    //single underline cells
 
 })
