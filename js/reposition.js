@@ -102,4 +102,36 @@ $(document).ready(function() {
     //	watch item...........need to also drop in yield #
     $('.yield').text('Yield:')
 
+    //handle form submission
+    $('.runModel').on('click', function() {
+
+    	let id = $('#bankIDinput').val();
+    	//id = pasrseInt(id);
+    	let yld = parseFloat($('#yieldInput').val());
+    	let cash = parseFloat($('#cashInput').val());
+
+
+    	//error handling...data type
+    	if (typeof(yld) != "number" || typeof(cash) != "number") {
+
+    		//alert("Numeric Inputs Only");
+
+    	}
+
+    	//error handle the ID input to accept numbers only
+    	let idRegEx = /^\d+$/
+    	if (!id.match(idRegEx)) {
+
+    		console.log('Input Numbers Only, Please')
+
+    		$('#bankIDinput').val(123456)
+
+    	}
+
+    	//FOR FUN
+    	alert('Time to load in your fancy R code, Joe')
+
+
+    });
+
 })

@@ -1,28 +1,50 @@
+html {
+    font-family: arial;
+}
+
 table {
     border-collapse: separate;
     border-spacing: 10px 1px;
-   
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+.ptNavBar {
+    background-color: #00539b !important;
+}
+
+.ptNavBar a {
+    color: white !important;
+    border-bottom: 20px !important;
 }
 
 #sidebar {
-	background-color: #e7e7e7;
-	border-radius: 10px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.LTM, .restructured {
-	text-align: left;
+#sidebar label {
+    font-weight: bold;
+}
+
+.LTM,
+.restructured {
+    text-align: left;
 }
 
 .percentLTM.colorCells {
     background-color: #e2efda;
 }
 
-.LTM.colorCells{
-   background-color: #e2efda;
+.LTM.colorCells {
+    background-color: #e2efda;
 }
 
 .restructured.colorCells {
-	    background-color: #ddebf7;
+    background-color: #ddebf7;
 }
 
 .percentRestructured.colorCells {
@@ -35,16 +57,17 @@ table {
 }
 
 .fieldNames {
-	    text-indent: 15px;
+    text-indent: 15px;
 }
 
 td.singleUnderline {
-  border-bottom: 3px !important;
-  border-color: black !important;
+    border-bottom: 3px !important;
+    border-color: black !important;
 }
-	
-.table.no-border tr td, .table.no-border tr th {
-  border-color: white;
+
+.table.no-border tr td,
+.table.no-border tr th {
+    border-color: white;
 }
 
 .yellowRowCells {
@@ -68,28 +91,29 @@ td.singleUnderline {
     color: black;
 }
 
-#percentAssetsHeaderLTM, #percentAssetsRestructuredHeader {
+#percentAssetsHeaderLTM,
+#percentAssetsRestructuredHeader {
     font-style: italic;
     font-size: 18px;
     background-color: white;
     color: black;
 }
 
-td.dblUnderlined { 
-	border-bottom: 3px double !important;
-	border-color: black !important; 
+td.dblUnderlined {
+    border-bottom: 3px double !important;
+    border-color: black !important;
 }
 
 .midLine {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .yield {
-	background-color: #f8cbad;
-	text-align: center;
-	font-weight: bold;
+    background-color: #f8cbad;
+    text-align: center;
+    font-weight: bold;
 }
 
 .boldOnly {
-	font-weight: bold;
+    font-weight: bold;
 }
