@@ -11,6 +11,10 @@ table {
 	background-color: white;
 }
 
+.sidebarCol {
+    padding-left: 0px;
+}
+
 .ptNavBar {
     background-color: #00539b !important;
 }
@@ -28,6 +32,12 @@ table {
 
 #sidebar label {
     font-weight: bold;
+    padding: 5px;
+}
+
+#balanceSheetReposition_BankName{
+    padding: 15px;
+    color: #00539b;
 }
 
 .LTM,
@@ -116,4 +126,8 @@ td.dblUnderlined {
 
 .boldOnly {
     font-weight: bold;
+}
+
+.nav.navbar-nav>li {
+    padding: 10px;
 }
