@@ -58,7 +58,7 @@ doubleUnderLine = [
 $(document).ready(function() {
 
     //add field names to left hand column of tables
-    let fieldArr = $(".fieldNames")
+    let fieldArr = $(".fieldName")
 
     $.each(fieldArr, function(index, value) {
 
@@ -76,8 +76,8 @@ $(document).ready(function() {
     });
 
     //color miscellaneous cells
-    $(".percentLTM").slice(1, 5).addClass("colorCells")
-    $(".percentRestructured").slice(1, 5).addClass("colorCells")
+    $(".percentLTM").slice(0, 4).addClass("colorCells")
+    $(".percentRestructured").slice(0, 4).addClass("colorCells")
 
     //single underline cells
     singleUnderLine.forEach(function(val) {
@@ -85,7 +85,9 @@ $(document).ready(function() {
         let cur = respositionRowNames.indexOf(val) //index that we will then underline in various columns
 
         //console.log($(".LTM").slice(cur))
-        $(".fieldNames").slice(cur + 1, cur + 2).addClass("singleUnderline")
+        $(".fieldName").slice(cur + 1, cur + 2).addClass("singleUnderline")
+        $(".LTM").slice(cur + 1, cur + 2).addClass("singleUnderline")
+        $(".restructured").slice(cur + 1, cur + 2).addClass("singleUnderline")
 
     });
 
@@ -95,7 +97,9 @@ $(document).ready(function() {
         let cur = respositionRowNames.indexOf(val) //index that we will then underline in various columns
 
         //console.log($(".LTM").slice(cur))
-        $(".fieldNames").slice(cur, cur+1).addClass("dblUnderlined")
+        $(".fieldName").slice(cur, cur+1).addClass("dblUnderlined")
+        $(".LTM").slice(cur, cur+1).addClass("dblUnderlined")
+        $(".restructured").slice(cur, cur+1).addClass("dblUnderlined")
 
     });
 
